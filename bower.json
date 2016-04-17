@@ -1,0 +1,20 @@
+{
+  "name": "exchange",
+  "authors": [
+    "Beta Kuang <beta.kuang@gmail.com>"
+  ],
+  "description": "A simple web app for currency exchange.",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
+  }
+}
