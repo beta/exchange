@@ -1,0 +1,30 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+html, body, .container, .exchange-container {
+  height: 100%;
+}
+
+.exchange-card {
+  margin-top: 20px;
+}
+
+.exchange-card .exchange-card__input {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.exchange-card .exchange-card__button_calc {
+  position: relative;
+  float: right;
+  top: -28px;
+  right: 20px;
+}
+
+.exchange-card .exchange-card__result {
+  border-top: 1px #f0f0f0 solid;
+  margin-top: 0px;
+  padding-bottom: 0px; 
+}

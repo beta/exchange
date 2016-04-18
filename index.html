@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css" />
-    
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-    <script src="bower_components/director/build/director.min.js"></script>
-    <script src="bower_components/ractive/ractive.min.js"></script>
-  </head>
-  <body>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+  <script src="bower_components/director/build/director.min.js"></script>
+  <script src="bower_components/ractive/ractive.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="exchange-container">
+      <div class="exchange-card card">
+        <div class="exchange-card__input card-content row">
+          <form class="col m10 offset-m1 s12">
+            <div class="row">
+              <div class="input-field col m4 s12">
+                <select name="currency" id="select-currency" required>
+                <option value="" disabled selected>Select Currency</option>
+                <optgroup label="Frequent">
+                  <option value="USD">USD</option>
+                  <option value="JPY">JPY</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                </optgroup>
+                <optgroup id="group-currencies" label="All Currencies">
+                </optgroup>
+              </select>
+              <label id="label-currency" for="select-currency" data-error="123">Currency</label>
+              </div>
+              <div class="input-field col m8 s12">
+                <input type="number" name="amount" id="input-amount">
+                <label for="input-amount">Amount</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <a id="button-calc" class="exchange-card__button_calc btn-floating btn-large waves-effect waves-light grey"><i id="icon-calc" class="material-icons">done</i></a>
+        <div class="exchange-card__result card-content row">
+          <form class="col m10 offset-m1 s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="number" id="input-result" value="0" readonly>
+                <label for="input-result" data-error="123">CNY</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
