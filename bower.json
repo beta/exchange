@@ -15,8 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "director": "^1.2.8",
-    "ractive": "^0.7.3",
     "Materialize": "materialize#^0.97.6",
     "jquery": "^2.2.3"
   }
